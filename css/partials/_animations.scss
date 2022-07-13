@@ -2,6 +2,9 @@
 $width-card: 340px;
 $height-card: 0.64 * $width-card;
 
+.border{
+    border: 1px solid red;
+}
 .div-card{
 perspective: 500px;
 position: relative;
@@ -46,5 +49,43 @@ position: relative;
 
 .icon-card-hero{
     position: absolute;
-    top: 200px;
+    top: -0px;
+    left: -30px;
+    z-index: 200;
+    animation: icons-hero 7s ease 0.5s infinite alternate;
+}
+.icon-mobile-hero{
+    position: absolute;
+    top: 150px; 
+    left: -250px;
+    z-index: 200;
+    animation: icons-hero 7s ease 0.1s infinite alternate;
+
+    @include responsive(s){
+        top: 350px;
+        left: -100px;
+
+    }
+}
+.icon-contactless-hero{
+    position: absolute;
+    top: 350px;
+    left: 30px;
+    z-index: 200;
+    animation: icons-hero 7s ease 2.5s infinite alternate;
+    
+    @include responsive(s){
+        top: 320px;
+        left: 120px;
+
+    }
+}
+
+@keyframes icons-hero {
+    0% {
+        transform: translate3d(0,0,0);
+    }
+    100% {
+        transform: translate3d(10px, -40px, 0);
+    }
 }
