@@ -249,3 +249,21 @@ position: relative;
         transform: translate3d(10px,-40px,0);
     }
 }
+
+//fignu3
+
+.fignu3-card-verse{
+    transform-origin: center center;
+    transform-box: fill-box;
+    transform: translate(0,-40,0) rotate(0deg);
+    animation: fignu3-card-verse-move 3s ease infinite alternate;
+}
+
+@keyframes fignu3-card-verse-move {
+    0%{
+        transform: translate(0,-40,0) rotate(0deg);
+    }
+    100%{
+        transform: translate(0,20px,0) rotate(5deg);
+    }
+}
