@@ -683,6 +683,10 @@ a:hover {
   padding: 128px;
 }
 
+.p-6 {
+  padding: 200px;
+}
+
 .pt-1 {
   padding-top: 8px;
 }
