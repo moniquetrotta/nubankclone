@@ -23,7 +23,7 @@
 .swiper-slide{
     max-width: 420px;
     padding: 24px 36px;
-    margin: 0px 16px;
+   // margin: 0px 16px;
     border-radius: 50px;
     background-color: $white-normal;
 
@@ -64,8 +64,6 @@
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background-color: red;
-
     background-size: cover;
     background-repeat: no-repeat;
 }
